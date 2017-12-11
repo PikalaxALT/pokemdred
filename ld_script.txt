@@ -31,8 +31,9 @@ SECTIONS {
     .text :
     ALIGN(4)
     {
-		asm/crt0.o;
-		asm/rom0.o;
+		asm/crt0.o(.text);
+		asm/rom_80001dc.o(.text);
+		asm/rom0.o(.text);
     } =0
 
     /* Discard everything not specifically mentioned above. */
