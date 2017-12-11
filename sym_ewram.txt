@@ -1,0 +1,6 @@
+	.space 0x2D5D8
+
+gIntrTable: @ 202D5D8
+	.space 0x720
+
+gUnknown_0202DCF8: @ 202DCF8
